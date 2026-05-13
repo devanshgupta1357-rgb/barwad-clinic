@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Dental Clinic | Your Smile, Our Priority</title>
+    <meta name="description"
+        content="Professional dental care in Butibori, Nagpur. Experience world-class dentistry with modern equipment and expert care.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <a href="#" class="logo">
+            <img src="assets/logo.png" alt="Barwad Hi-Tech Dental">
+        </a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <a href="#appointment" class="btn-book">Book Appointment</a>
+        </div>
+    </header>
+
+    <!-- Mobile Call Button (Sticky) -->
+    <a href="tel:+919011302935" class="mobile-call">
+        <i class="fas fa-phone-alt"></i> Call Now: +91 9011302935
+    </a>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919011302935?text=Hello%20Doctor%20I%20want%20to%20book%20an%20appointment"
+        class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-btns-layout">
+            <div style="display: flex; align-items: center; gap: 4rem; flex-wrap: wrap;">
+                <div class="hero-content">
+                    <h1>Your Smile, <span>Our Priority</span></h1>
+                    <p>Experience the highest standard of dental care in Butibori. Our clinic combines advanced
+                        technology with a gentle touch to give you the smile you've always dreamed of.</p>
+                    <div class="hero-btns">
+                        <a href="tel:+919011302935" class="btn-primary">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                        <a href="https://wa.me/919011302935?text=Hello%20Doctor%20I%20want%20to%20book%20an%20appointment"
+                            class="btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Book on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/Modern dental clinic.png" alt="Barwad Hi-Tech Dental Clinic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Our Premium Services</h2>
+                <p style="color: var(--text-light); max-width: 700px; margin: 0 auto;">We offer a wide range of dental
+                    services using state-of-the-art technology to ensure your comfort and the best results.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-teeth"></i></div>
+                    <h3>Dental Implants</h3>
+                    <p>Permanent solutions for missing teeth that look and feel completely natural.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-magic"></i></div>
+                    <h3>Teeth Whitening</h3>
+                    <p>Brighten your smile in just one visit with our professional whitening treatments.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-file-medical"></i></div>
+                    <h3>Root Canal</h3>
+                    <p>Painless root canal treatments to save your natural teeth and relieve pain.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-align-center"></i></div>
+                    <h3>Braces & Aligners</h3>
+                    <p>Get perfectly straight teeth with our modern orthodontic solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2>Why Patients Trust Us</h2>
+            </div>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="service-icon" style="background: rgba(13, 148, 136, 0.1); color: var(--primary);">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>15+ Years</h3>
+                    <p>Experienced Doctor</p>
+                </div>
+                <div class="trust-item">
+                    <div class="service-icon" style="background: rgba(13, 148, 136, 0.1); color: var(--primary);">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Modern Tech</h3>
+                    <p>Advanced Equipment</p>
+                </div>
+                <div class="trust-item">
+                    <div class="service-icon" style="background: rgba(13, 148, 136, 0.1); color: var(--primary);">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3>100% Hygiene</h3>
+                    <p>Sterilized Environment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Doctor Section -->
+    <section id="about">
+        <div class="container">
+            <div style="display: flex; align-items: center; gap: 4rem; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px; position: relative;">
+                    <img src="assets/doctor.jpg" alt="Dr. Barwad"
+                        style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-lg);">
+                    <div class="doctor-badge">
+                        <h3>Dr. Barwad</h3>
+                        <p>BDS, MDS — Senior Dentist</p>
+                    </div>
+                </div>
+                <div style="flex: 1.5; min-width: 300px;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Expert Care You Can Trust</h2>
+                    <p style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 1.5rem;">Dr. Barwad is a
+                        highly skilled specialist dedicated to providing the highest quality of dental care. With
+                        expertise in advanced dental procedures, he ensures every patient receives personalized and
+                        pain-free treatment.</p>
+                    <p style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 2rem;">Our clinic is built on
+                        the foundation of trust, excellence, and modern medical practices to give you a smile that lasts
+                        a lifetime.</p>
+                    <div style="display: flex; gap: 3rem;">
+                        <div>
+                            <h4 style="color: var(--primary); font-size: 2rem;">170+</h4>
+                            <p>Happy Patients</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--primary); font-size: 2rem;">4.8 / 5</h4>
+                            <p>Avg Rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+<section id="gallery" style="background: #F8FAFC;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem;">Smile Transformations</h2>
+                <p style="color: var(--text-light);">Real results from our patients</p>
+            </div>
+            
+            <div class="results-grid" id="dynamicGallery">
+                <p style="text-align: center; width: 100%; grid-column: 1 / -1; color: var(--text-light);">Loading gallery...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Reviews -->
+    <section id="reviews" style="padding: 100px 0; background: #F8FAFC;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem;">Patient Reviews</h2>
+                <p style="color: var(--text-light);">What our patients say about us</p>
+            </div>
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-info">
+                            <h4>Pranav Ingale Patil</h4>
+                            <span>2 reviews</span>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"Had a wonderful experience here! The doctor is extremely caring and makes
+                        sure you feel comfortable before starting any procedure. The entire treatment was smooth, and
+                        the staff was very supportive. Highly recommend this clinic for anyone looking for a trustworthy
+                        dentist!"</p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-info">
+                            <h4>Ayush Khadatkar</h4>
+                            <span>Local Guide · 4 reviews · 1 photo</span>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"I would recommend Dr Barwad and his team for their professionalism, quality
+                        of care & outstanding premises."</p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-info">
+                            <h4>Shashi Kachhap</h4>
+                            <span>1 review</span>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"First time I will come today. Clinic is very nice, neat and clean. I am
+                        impressed."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section id="appointment" class="booking-section">
+        <div class="container">
+            <div class="booking-container">
+                <div style="flex: 1;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Schedule Your Visit</h2>
+                    <p style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 2rem;">Take the first step
+                        towards a healthier, brighter smile. Fill out the form and we'll confirm your appointment via
+                        WhatsApp.</p>
+
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+                            <i class="fas fa-check-circle" style="color: var(--primary);"></i> Same-day consultations
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+                            <i class="fas fa-check-circle" style="color: var(--primary);"></i> Flexible timing
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+                            <i class="fas fa-check-circle" style="color: var(--primary);"></i> Emergency care
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="booking-form" id="appointmentForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="treatment">Preferred Treatment</label>
+                        <select id="treatment" required>
+                            <option value="">Select Treatment</option>
+                            <option value="Checkup">General Checkup</option>
+                            <option value="Cleaning">Teeth Cleaning</option>
+                            <option value="Whitening">Teeth Whitening</option>
+                            <option value="Implants">Dental Implants</option>
+                            <option value="Braces">Braces/Aligners</option>
+                            <option value="Root Canal">Root Canal</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">Book via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map -->
+    <section id="contact" style="padding-bottom: 0;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem;">Visit Us</h2>
+                <p>Conveniently located in Butibori, Nagpur</p>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14907.834575971556!2d79.006325!3d20.913988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4a6e300000001%3A0x7d0e404b9c59508d!2sButibori%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">
+                        <img src="assets/logo.png" alt="Barwad Hi-Tech Dental" style="height: 50px;">
+                    </a>
+                    <p>Advanced dental care with a gentle touch. Your smile is our priority.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Butibori, Nagpur, Maharashtra</li>
+                        <li><i class="fas fa-phone"></i> +91 9011302935</li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Clinic Timings</h4>
+                    <ul class="timing-list">
+                        <li><span>Monday:</span> <span>10 AM – 8 PM</span></li>
+                        <li><span>Tuesday:</span> <span>10 AM – 8 PM</span></li>
+                        <li><span>Wednesday:</span> <span>10 AM – 8 PM</span></li>
+                        <li><span>Thursday:</span> <span>10 AM – 8 PM</span></li>
+                        <li><span>Friday:</span> <span>10 AM – 8 PM</span></li>
+                        <li class="closed"><span>Saturday:</span> <span>Closed</span></li>
+                        <li><span>Sunday:</span> <span>10 AM – 8 PM</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #1E293B; padding-top: 2rem; text-align: center; font-size: 0.9rem;">
+                <p>&copy; 2026 Barwad Hi-Tech Dental Clinic & Implant Centre. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

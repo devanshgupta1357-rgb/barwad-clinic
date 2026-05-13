@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Barwad Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Admin specific styles */
+        body { background: #F8FAFC; }
+        .admin-container { max-width: 800px; margin: 50px auto; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+        .hidden { display: none !important; }
+        .upload-section { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #E2E8F0; }
+    </style>
+</head>
+<body>
+
+    <div id="loginScreen" class="admin-container">
+        <h2>Doctor Login</h2>
+        <p style="color: var(--text-light); margin-bottom: 2rem;">Please log in to manage the gallery.</p>
+        
+        <form id="loginForm">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="btn-submit">Login</button>
+            <p id="loginError" style="color: red; margin-top: 1rem; display: none;">Invalid credentials</p>
+        </form>
+    </div>
+
+    <div id="dashboardScreen" class="admin-container hidden">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h2>Gallery Management</h2>
+            <button id="logoutBtn" class="btn-outline" style="padding: 0.5rem 1rem;">Logout</button>
+        </div>
+
+        <div class="upload-section">
+            <h3>Upload New Case</h3>
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label>Treatment Title (e.g., Root Canal)</label>
+                    <input type="text" id="treatmentTitle" required>
+                </div>
+                
+                <div style="display: flex; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                    <div class="form-group" style="flex: 1; min-width: 200px; margin-bottom: 0;">
+                        <label>Before Image</label>
+                        <input type="file" id="beforeImage" accept="image/*" required>
+                    </div>
+                    <div class="form-group" style="flex: 1; min-width: 200px; margin-bottom: 0;">
+                        <label>After Image</label>
+                        <input type="file" id="afterImage" accept="image/*" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit" id="uploadBtn">Upload to Gallery</button>
+                <p id="uploadStatus" style="margin-top: 1rem; font-weight: bold;"></p>
+            </form>
+        </div>
+
+        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #E2E8F0;">
+            <h3>Manage Existing Cases</h3>
+            <div id="adminGalleryGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
