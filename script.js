@@ -63,7 +63,7 @@ revealOnScroll(); // Run once on load
 // In a full implementation, we'd add a hamburger menu. 
 // For now, the sticky call and floating whatsapp handle the primary mobile CTAs.
 // --- DYNAMIC GALLERY FETCH ---
-const API_URL = 'https://barwad-api.onrender.com';
+const API_URL = 'https://barwad-api.onrender.com/api';
 
 async function loadGallery() {
     const galleryContainer = document.getElementById('dynamicGallery');

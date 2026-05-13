@@ -1,5 +1,5 @@
 // admin.js
-const API_URL = 'https://barwad-api.onrender.com';
+const API_URL = 'https://barwad-api.onrender.com/api';
 
 // DOM Elements
 const loginScreen = document.getElementById('loginScreen');
