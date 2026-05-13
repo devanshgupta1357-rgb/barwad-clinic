@@ -665,10 +665,36 @@ footer {
 
 @media (max-width: 991px) {
     .hero h1 { font-size: 3.5rem; }
-    .hero { flex-direction: column; text-align: center; padding-top: 150px; }
-    .hero-content { margin-bottom: 4rem; }
-    .hero-btns { justify-content: center; }
-    .hero-image img { width: 100%; transform: rotate(0); }
+    
+    /* Force the layout to stack vertically */
+    .hero, .hero .container { 
+        display: flex !important;
+        flex-direction: column !important; 
+        text-align: center; 
+        padding-top: 150px; 
+    }
+    
+    .hero-content { 
+        width: 100% !important;
+        margin-bottom: 2rem; 
+    }
+    
+    .hero-btns { 
+        justify-content: center !important; 
+    }
+    
+    .hero-image { 
+        width: 100% !important; 
+        justify-content: center !important;
+        margin-top: 2rem;
+    }
+    
+    .hero-image img { 
+        width: 100%; 
+        max-width: 380px; 
+        margin: 0 auto; 
+    }
+
     .booking-container { flex-direction: column; }
     .doctor-badge { position: static; margin-top: 1rem; transform: none; text-align: center; }
     nav { display: none; }
@@ -676,52 +702,21 @@ footer {
 
 @media (max-width: 768px) {
     .hero h1 { font-size: 2.5rem; }
-    .hero-btns { flex-direction: column; }
-    .mobile-call { display: block; }
-    .whatsapp-float { bottom: 80px; }
-}
-/* =========================================
-   MOBILE RESPONSIVENESS (PHONES & TABLETS)
-   ========================================= */
-
-@media (max-width: 768px) {
-    /* Stack the Hero Section vertically */
-    .hero .container {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-top: 2rem;
-    }
-
-    /* Make the text take full width on mobile */
-    .hero-text {
+    
+    /* Stack the buttons nicely on small phone screens */
+    .hero-btns { 
+        flex-direction: column; 
+        gap: 1rem; 
         width: 100%;
-        padding-right: 0;
-        margin-bottom: 2rem;
-    }
-
-    /* Center the buttons on mobile */
-    .hero-buttons {
-        justify-content: center;
-        flex-wrap: wrap; /* Allows buttons to stack if screen is very small */
-    }
-
-    /* Fix the squished image */
-    .hero-image {
-        width: 100%;
-        margin-top: 2rem;
-    }
-
-    .hero-image img {
-        width: 100%;
-        max-width: 400px; /* Prevents it from getting too massive */
-        height: auto;
+        max-width: 300px;
         margin: 0 auto;
     }
-
-    /* Adjust the header so the logo and button fit */
-    header .container {
-        flex-direction: column;
-        gap: 1rem;
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        justify-content: center;
     }
+
+    .mobile-call { display: block; }
+    .whatsapp-float { bottom: 80px; }
 }
